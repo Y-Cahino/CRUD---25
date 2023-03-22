@@ -33,6 +33,12 @@
             this.Price = new System.Windows.Forms.TextBox();
             this.Prezzo = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.Stampa = new System.Windows.Forms.Button();
+            this.cancella = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.modifica = new System.Windows.Forms.Button();
+            this.newn = new System.Windows.Forms.TextBox();
+            this.newp = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Name
@@ -79,12 +85,73 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
+            // Stampa
+            // 
+            this.Stampa.Location = new System.Drawing.Point(74, 160);
+            this.Stampa.Name = "Stampa";
+            this.Stampa.Size = new System.Drawing.Size(75, 23);
+            this.Stampa.TabIndex = 5;
+            this.Stampa.Text = "Stampa";
+            this.Stampa.UseVisualStyleBackColor = true;
+            this.Stampa.Click += new System.EventHandler(this.Stampa_Click);
+            // 
+            // cancella
+            // 
+            this.cancella.Location = new System.Drawing.Point(202, 159);
+            this.cancella.Name = "cancella";
+            this.cancella.Size = new System.Drawing.Size(75, 23);
+            this.cancella.TabIndex = 6;
+            this.cancella.Text = "Cancella";
+            this.cancella.UseVisualStyleBackColor = true;
+            this.cancella.Click += new System.EventHandler(this.cancella_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(331, 160);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // modifica
+            // 
+            this.modifica.Location = new System.Drawing.Point(77, 238);
+            this.modifica.Name = "modifica";
+            this.modifica.Size = new System.Drawing.Size(75, 23);
+            this.modifica.TabIndex = 8;
+            this.modifica.Text = "Modifica";
+            this.modifica.UseVisualStyleBackColor = true;
+            this.modifica.Click += new System.EventHandler(this.modifica_Click);
+            // 
+            // newn
+            // 
+            this.newn.Location = new System.Drawing.Point(202, 240);
+            this.newn.Name = "newn";
+            this.newn.Size = new System.Drawing.Size(100, 20);
+            this.newn.TabIndex = 9;
+            this.newn.TextChanged += new System.EventHandler(this.newn_TextChanged);
+            // 
+            // newp
+            // 
+            this.newp.Location = new System.Drawing.Point(353, 240);
+            this.newp.Name = "newp";
+            this.newp.Size = new System.Drawing.Size(100, 20);
+            this.newp.TabIndex = 10;
+            this.newp.TextChanged += new System.EventHandler(this.newp_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.newp);
+            this.Controls.Add(this.newn);
+            this.Controls.Add(this.modifica);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.cancella);
+            this.Controls.Add(this.Stampa);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.Prezzo);
             this.Controls.Add(this.Price);
@@ -105,6 +172,12 @@
         private System.Windows.Forms.TextBox Price;
         private System.Windows.Forms.Label Prezzo;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button Stampa;
+        private System.Windows.Forms.Button cancella;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button modifica;
+        private System.Windows.Forms.TextBox newn;
+        private System.Windows.Forms.TextBox newp;
     }
 }
 

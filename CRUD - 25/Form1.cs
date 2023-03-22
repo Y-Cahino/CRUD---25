@@ -47,6 +47,30 @@ namespace CRUD___25
         {
 
         }
+        private void modifica_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newn_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Stampa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancella_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
 
         #region funzioni di servizio
@@ -91,6 +115,5 @@ namespace CRUD___25
         }
         #endregion
 
-        
     }
 }
