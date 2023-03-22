@@ -35,7 +35,7 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.Stampa = new System.Windows.Forms.Button();
             this.cancella = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Ricerca = new System.Windows.Forms.Button();
             this.modifica = new System.Windows.Forms.Button();
             this.newn = new System.Windows.Forms.TextBox();
             this.newp = new System.Windows.Forms.TextBox();
@@ -105,14 +105,15 @@
             this.cancella.UseVisualStyleBackColor = true;
             this.cancella.Click += new System.EventHandler(this.cancella_Click);
             // 
-            // button3
+            // Ricerca
             // 
-            this.button3.Location = new System.Drawing.Point(331, 160);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Ricerca.Location = new System.Drawing.Point(331, 160);
+            this.Ricerca.Name = "Ricerca";
+            this.Ricerca.Size = new System.Drawing.Size(75, 23);
+            this.Ricerca.TabIndex = 7;
+            this.Ricerca.Text = "Ricerca";
+            this.Ricerca.UseVisualStyleBackColor = true;
+            this.Ricerca.Click += new System.EventHandler(this.Ricerca_Click);
             // 
             // modifica
             // 
@@ -149,7 +150,7 @@
             this.Controls.Add(this.newp);
             this.Controls.Add(this.newn);
             this.Controls.Add(this.modifica);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Ricerca);
             this.Controls.Add(this.cancella);
             this.Controls.Add(this.Stampa);
             this.Controls.Add(this.listView1);
@@ -174,7 +175,7 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button Stampa;
         private System.Windows.Forms.Button cancella;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Ricerca;
         private System.Windows.Forms.Button modifica;
         private System.Windows.Forms.TextBox newn;
         private System.Windows.Forms.TextBox newp;

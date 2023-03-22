@@ -71,6 +71,10 @@ namespace CRUD___25
         {
 
         }
+        private void Ricerca_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
 
         #region funzioni di servizio
@@ -113,7 +117,23 @@ namespace CRUD___25
                 }
             }
         }
+        //funzione di ricerca
+        void research()
+        {
+
+        }
+        //funzione cancella
+        void delete()
+        {
+
+        }
+        //funzione modifica
+        void mod()
+        {
+
+        }
         #endregion
 
+        
     }
 }
