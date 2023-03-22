@@ -43,9 +43,14 @@ namespace CRUD___25
         {
 
         }
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
         #endregion
 
         #region funzioni di servizio
+        //funzione di aggiornamento del file
         void upd(string n, string p)
         {
             if(!File.Exists(file))
@@ -64,5 +69,28 @@ namespace CRUD___25
                 }
             }
         }
+        //funzione di stampa
+        void vis()
+        {
+            listView1.Items.Clear();
+            if(!File.Exists(file))
+            {
+                MessageBox.Show("Il file non è presente");
+            }
+            else
+            {
+                using (StreamReader st = File.OpenText(file))
+                {
+                    string s;
+                    while((s=st.ReadLine())!=null)
+                    {
+                        listView1.Items.Add(s);
+                    }
+                }
+            }
+        }
+        #endregion
+
+        
     }
 }

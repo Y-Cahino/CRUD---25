@@ -32,6 +32,7 @@
             this.Nome = new System.Windows.Forms.Label();
             this.Price = new System.Windows.Forms.TextBox();
             this.Prezzo = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // Name
@@ -68,12 +69,23 @@
             this.Prezzo.TabIndex = 3;
             this.Prezzo.Text = "Prezzo";
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(535, 59);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(253, 363);
+            this.listView1.TabIndex = 4;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.Prezzo);
             this.Controls.Add(this.Price);
             this.Controls.Add(this.Nome);
@@ -92,6 +104,7 @@
         private System.Windows.Forms.Label Nome;
         private System.Windows.Forms.TextBox Price;
         private System.Windows.Forms.Label Prezzo;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 
